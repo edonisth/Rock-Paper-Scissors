@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bgcolor {
+            background-color: rgb(37, 37, 111);
+        }
+    </style>
+</head>
+<body class="bgcolor">
+
+
+    <script>
+
+        function getComputerChoice() {
+           let randomNum = Math.random();
+
+             if (randomNum < 0.33) {
+                return "Rock"; 
+           } else if (randomNum < 0.66) {
+                return "Paper"; 
+           } else {
+                return "Scissors";
+            }
+        }   console.log(getComputerChoice());
+
+        // end of the first function
+
+        // function to get the human player choice 
+
+       function getHumanChoice() {
+
+            let choice = prompt("Choose Rock, Paper, or Scissors:").toLowerCase();
+
+            while (choice !== "rock" && choice !== "paper" && choice !== "scissors") {
+                choice = prompt("Invalid choice! Please choose Rock, Paper, or Scissors:").toLowerCase();
+            }  
+
+            return choice; // Return the valid choice directly
+            } console.log(getHumanChoice())
+    
+            let humanScore = 0;
+            let computerScore = 0;
+
+            function playRound(humanChoice, computerChoice) {
+             // your code here!
+            }
+
+            const humanSelection = getHumanChoice();
+            const computerSelection = getComputerChoice();
+
+            playRound(humanSelection, computerSelection);
+    
+    </script>
+
+
+
+
+</body>
+</html>
+
+
+
